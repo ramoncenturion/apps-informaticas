@@ -4,10 +4,17 @@ import java.util.HashMap;
 
 public class CreadorComponente {
 	
-	CreadorComponente (){
-		
-	}
+	protected CreadorComponente(){}
 	
+	private static CreadorComponente instance = null;
+	  
+    public static CreadorComponente getInstance() {
+      if(instance == null) {
+         instance = new CreadorComponente();
+      }
+      return instance;
+    }
+	   
 	public HashMap<String, Componente> crearComponentes(int tipoTecho, int tipoPiso){
 		HashMap<String, Componente> componentes = new HashMap<String, Componente>();
 		

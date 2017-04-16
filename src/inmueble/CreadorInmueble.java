@@ -9,10 +9,18 @@ import java.util.HashMap;
  */
 public class CreadorInmueble {
 
+	private static CreadorInmueble instance = null;
 	private CreadorComponente creadorComp;
-	
-	CreadorInmueble(){
-		this.setCreadorComp(new CreadorComponente());
+	  
+    public static CreadorInmueble getInstance() {
+      if(instance == null) {
+         instance = new CreadorInmueble();
+      }
+      return instance;
+    }
+    
+    protected CreadorInmueble(){
+		this.setCreadorComp(CreadorComponente.getInstance());
 	}
 
 	public Inmueble crearInmueble(int tipoTecho, int tipoPiso){

@@ -8,7 +8,7 @@ public class Main {
 	public static void main(String[] args) {
 		int techo_un_agua = 1;
 		int piso_madera = 2;
-		CreadorInmueble creador = new CreadorInmueble();
+		CreadorInmueble creador = CreadorInmueble.getInstance();
 		Inmueble inmueble = creador.crearInmueble(techo_un_agua,piso_madera);
 		System.out.println("Promedio: "+inmueble.getValor());
 		HashMap<String, Componente> componentes = inmueble.getComponentes();
