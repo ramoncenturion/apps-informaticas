@@ -1,33 +1,31 @@
 package inmueble;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Set;
 
 public class Inmueble {
-
-	private List<Componente> compomentes = new ArrayList<Componente>();
+	private HashMap<String, Componente> componentes;
 	
-	Inmueble(int tipoTecho, int tipoPiso){
-		Componente techo = new Techo(tipoTecho);
-		this.compomentes.add(techo);
-		Componente piso = new Piso(tipoPiso);
-		this.compomentes.add(piso);
-		
+	Inmueble(HashMap<String, Componente> componentes ){
+		this.setComponentes(componentes);
 	}
 
 	public double getValor(){
 		double valorFinal = 0;
-		for (Componente componente : compomentes) {
-			valorFinal += componente.getValor();
+		Set<String> keys = this.componentes.keySet();
+		for (String key : keys) {
+			valorFinal += this.componentes.get(key).getValor();
+			
 		}
-		return valorFinal/this.compomentes.size();
-	}
-	
-	public List<Componente> getCompomentes() {
-		return compomentes;
+		return valorFinal/this.componentes.size();
 	}
 
-	public void setCompomentes(List<Componente> compomentes) {
-		this.compomentes = compomentes;
+	public HashMap<String, Componente> getComponentes() {
+		return componentes;
 	}
+
+	public void setComponentes(HashMap<String, Componente> componentes) {
+		this.componentes = componentes;
+	}
+	
 }
