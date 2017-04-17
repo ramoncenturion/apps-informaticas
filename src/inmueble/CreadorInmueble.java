@@ -23,10 +23,10 @@ public class CreadorInmueble {
 		this.setCreadorComp(CreadorComponente.getInstance());
 	}
 
-	public Inmueble crearInmueble(int tipoTecho, int tipoPiso){
+	public Inmueble crearInmueble(String descripcion, int tipoTecho, int tipoPiso){
 		HashMap<String, Componente> componentes = this.creadorComp.crearComponentes(tipoTecho, tipoPiso);
 		
-		Inmueble inmueble = new Inmueble(componentes);
+		Inmueble inmueble = new Inmueble(descripcion,componentes);
 		
 		return inmueble;
 	}

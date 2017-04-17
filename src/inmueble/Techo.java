@@ -17,7 +17,7 @@ public class Techo implements Componente {
 	}
 
 	@Override
-	public String getTipo() {
+	public String getDescripcion() {
 		return this.getTipoTecho().getNombre();
 	}
 

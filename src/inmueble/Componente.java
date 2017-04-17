@@ -2,7 +2,7 @@ package inmueble;
 
 public interface Componente {
 
-	public String getTipo();
+	public String getDescripcion();
 	public int getValor();
 	
 }

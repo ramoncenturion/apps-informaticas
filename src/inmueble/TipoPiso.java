@@ -2,7 +2,7 @@ package inmueble;
 
 public enum TipoPiso {
 	
-	LADRILLO("Techo a 1 Agua",1),MADERA("Madera",2), CERAMICOS("Ceramicos",3), 
+	LADRILLO("Ladrillo",1),MADERA("Madera",2), CERAMICOS("Ceramicos",3), 
 	MARMOL("Marmol",4), CEMENTO_Y_HORMIGÓN("Cemento y Hormigon",5), MOSAICOS("Mosaicos",6), 
 	ENTABLONADA("Entablonada",7), FLOTANTE("Flotante",8);
 	

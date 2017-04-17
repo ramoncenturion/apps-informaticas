@@ -17,7 +17,7 @@ public class Piso implements Componente {
 	}
 
 	@Override
-	public String getTipo() {
+	public String getDescripcion() {
 		return this.getTipoPiso().getNombre();
 	}
 
