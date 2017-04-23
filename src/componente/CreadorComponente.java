@@ -1,4 +1,4 @@
-package inmueble;
+package componente;
 
 import java.util.HashMap;
 

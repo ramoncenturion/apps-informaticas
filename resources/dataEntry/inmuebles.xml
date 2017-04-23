@@ -3,28 +3,28 @@
 	<inmueble>
 		<nombre>Depto 1</nombre>
 		<piso>
-			<tipoPiso>1</tipoPiso>
+			<tipoPiso>Ladrillo</tipoPiso>
 		</piso>
 		<techo>
-			<tipoTecho>2</tipoTecho>
+			<tipoTecho>Techo a 1 Agua</tipoTecho>
 		</techo>
 	</inmueble>
 	<inmueble>
 		<nombre>Depto 2</nombre>
 		<piso>
-			<tipoPiso>2</tipoPiso>
+			<tipoPiso>Madera</tipoPiso>
 		</piso>
 		<techo>
-			<tipoTecho>3</tipoTecho>
+			<tipoTecho>Techo a 2 Aguas</tipoTecho>
 		</techo>
 	</inmueble>
 	<inmueble>
 		<nombre>Depto 3</nombre>
 		<piso>
-			<tipoPiso>3</tipoPiso>
+			<tipoPiso>Ceramicos</tipoPiso>
 		</piso>
 		<techo>
-			<tipoTecho>4</tipoTecho>
+			<tipoTecho>Techo a Varias Aguas</tipoTecho>
 		</techo>
 	</inmueble>
 </inmuebles>

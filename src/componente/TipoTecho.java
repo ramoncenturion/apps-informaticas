@@ -1,15 +1,13 @@
-package inmueble;
+package componente;
 
-public enum TipoPiso {
-	
-	LADRILLO("Ladrillo",1),MADERA("Madera",2), CERAMICOS("Ceramicos",3), 
-	MARMOL("Marmol",4), CEMENTO_Y_HORMIGÓN("Cemento y Hormigon",5), MOSAICOS("Mosaicos",6), 
-	ENTABLONADA("Entablonada",7), FLOTANTE("Flotante",8);
+public enum TipoTecho {
+	UN_AGUA("Techo a 1 Agua",1), DOS_AGUAS("Techo a 2 Aguas",2),
+	VARIAS_AGUAS("Techo a Varias Aguas",3), PLANO("Techo Plano",4);
 	
 	private String nombre;
 	private	int valor;
 	
-	private TipoPiso(String nombre, int valor){
+	private TipoTecho(String nombre, int valor){
 		this.setNombre(nombre);
 		this.setValor(valor);
 	}

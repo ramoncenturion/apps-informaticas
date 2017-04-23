@@ -1,25 +1,17 @@
 package inmueble;
 
 import java.util.HashMap;
-import java.util.Set;
+
+import componente.Componente;
 
 public class Inmueble {
 	private HashMap<String, Componente> componentes;
 	private String descripcion;
+	private double ponderacion;
 	
 	Inmueble(String descripcion, HashMap<String, Componente> componentes ){
 		this.setDescripcion(descripcion);
 		this.setComponentes(componentes);
-	}
-
-	public double getValor(){
-		double valorFinal = 0;
-		Set<String> keys = this.componentes.keySet();
-		for (String key : keys) {
-			valorFinal += this.componentes.get(key).getValor();
-			
-		}
-		return valorFinal/this.componentes.size();
 	}
 
 	public HashMap<String, Componente> getComponentes() {
@@ -36,6 +28,14 @@ public class Inmueble {
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+
+	public double getPonderacion() {
+		return ponderacion;
+	}
+
+	public void setPonderacion(double ponderacion) {
+		this.ponderacion = ponderacion;
 	}
 	
 }

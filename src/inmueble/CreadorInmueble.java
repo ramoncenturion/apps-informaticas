@@ -2,6 +2,9 @@ package inmueble;
 
 import java.util.HashMap;
 
+import componente.Componente;
+import componente.CreadorComponente;
+
 /**
  * Singleton
  * @author Usuario

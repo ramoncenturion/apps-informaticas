@@ -1,10 +1,10 @@
-package inmueble;
+package componente;
 
 public class Techo implements Componente {
 
 	private TipoTecho tipo;
 	
-	Techo(int tipo){
+	public Techo(int tipo){
 		this.setTipoTecho(TipoTecho.values()[tipo-1]);
 	}
 
