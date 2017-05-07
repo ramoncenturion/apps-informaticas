@@ -1,15 +1,16 @@
-package inmueble;
+package controladores;
 
 import java.util.List;
 
 import componente.Piso;
 import componente.Techo;
+import inmueble.Inmueble;
 
 public class Main {
 	
 	public static void main(String[] args) {
-		ManagerInmueble managerInmueble = ManagerInmueble.getInstance();
-		managerInmueble.inicializar();
+		Manager managerInmueble = Manager.getInstance();
+		managerInmueble.cargarDatos();
 		
 		List<Inmueble> inmuebles = managerInmueble.getInmuebles();
 		

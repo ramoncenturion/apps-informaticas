@@ -1,4 +1,4 @@
-package inmueble;
+package controladores;
 
 import java.util.Collections;
 import java.util.Comparator;
@@ -7,14 +7,15 @@ import java.util.List;
 import java.util.Set;
 
 import componente.Componente;
+import inmueble.Inmueble;
 
-public class PonderadorInmueble {
+public class Ponderador {
 
-	private static PonderadorInmueble instance = null;
+	private static Ponderador instance = null;
 	
-	public static PonderadorInmueble getInstance() {
+	public static Ponderador getInstance() {
       if(instance == null) {
-         instance = new PonderadorInmueble();
+         instance = new Ponderador();
       }
       return instance;
     }

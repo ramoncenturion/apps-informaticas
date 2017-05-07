@@ -1,4 +1,4 @@
-package inmueble;
+package controladores;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -15,35 +15,37 @@ import org.w3c.dom.NodeList;
 
 import componente.TipoPiso;
 import componente.TipoTecho;
+import inmueble.CreadorInmueble;
+import inmueble.Inmueble;
 
-public class Inicializador {
+public class CargadorDatos {
 	
 	private HashMap<String,Integer> componentesMap;
 
 	private CreadorInmueble creador;
-	private static Inicializador instance = null;
+	private static CargadorDatos instance = null;
 	  
-    public static Inicializador getInstance() {
+    public static CargadorDatos getInstance() {
       if(instance == null) {
-         instance = new Inicializador();
+         instance = new CargadorDatos();
       }
       return instance;
     }
 
-    Inicializador(){
+    CargadorDatos(){
     	this.creador = CreadorInmueble.getInstance();
-    	cargarMapa();
+    	cargarMapaComponentes();
     }
 	
-    private void cargarMapa() {
+    private void cargarMapaComponentes() {
 		this.componentesMap  = new HashMap<String,Integer>();
 		TipoPiso[] pisos = TipoPiso.values();
 		for (TipoPiso tipoPiso : pisos) {
-			this.componentesMap.put(tipoPiso.getNombre(), tipoPiso.getValor());	
+			this.componentesMap.put(tipoPiso.getDescripcion(), tipoPiso.getValor());	
 		}
 		TipoTecho[] techos = TipoTecho.values();
 		for (TipoTecho tipoTecho : techos) {			
-			this.componentesMap.put(tipoTecho.getNombre(), tipoTecho.getValor());
+			this.componentesMap.put(tipoTecho.getDescripcion(), tipoTecho.getValor());
 		}
 
 	}
