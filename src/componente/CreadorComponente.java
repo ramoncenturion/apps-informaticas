@@ -2,6 +2,10 @@ package componente;
 
 import java.util.HashMap;
 
+import componente.pared.Pared;
+import componente.piso.Piso;
+import componente.techo.Techo;
+
 public class CreadorComponente {
 	
 	protected CreadorComponente(){}
@@ -15,11 +19,13 @@ public class CreadorComponente {
       return instance;
     }
 	   
-	public HashMap<String, Componente> crearComponentes(int tipoTecho, int tipoPiso){
+	public HashMap<String, Componente> crearComponentes(int tipoTecho, int tipoPiso, 
+			int tipoLadrilloPared, int tipoRevIntPared, int tipoRevExtPared){
 		HashMap<String, Componente> componentes = new HashMap<String, Componente>();
 		
 		componentes.put("TECHO",this.crearTecho(tipoTecho));
 		componentes.put("PISO",this.crearPiso(tipoPiso));
+		componentes.put("PARED",this.crearPared(tipoLadrilloPared,tipoRevIntPared,tipoRevExtPared));
 		
 		return componentes;
 	}
@@ -30,5 +36,9 @@ public class CreadorComponente {
 
 	private Componente crearTecho(int tipoTecho) {
 		return new Techo(tipoTecho);
+	}
+	
+	private Componente crearPared(int tipoLadrilloPared, int tipoRevIntPared, int tipoRevExtPared) {
+		return new Pared(tipoLadrilloPared,tipoRevIntPared,tipoRevExtPared);
 	}
 }

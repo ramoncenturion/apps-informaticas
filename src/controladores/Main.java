@@ -2,8 +2,8 @@ package controladores;
 
 import java.util.List;
 
-import componente.Piso;
-import componente.Techo;
+import componente.piso.Piso;
+import componente.techo.Techo;
 import inmueble.Inmueble;
 
 public class Main {
@@ -19,7 +19,7 @@ public class Main {
 		
 		managerInmueble.editarInmueble(0, "TECHO", new Techo(1));
 		managerInmueble.editarInmueble(0, "PISO", new Piso(1));
-		
+		System.out.println("CAMBIO EN PROPIEDADES");
 		listarInmuebles(inmuebles);
 		
 		

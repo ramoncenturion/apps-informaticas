@@ -1,13 +1,14 @@
-package componente;
+package componente.pared;
 
-public enum TipoTecho {
-	UN_AGUA("Techo a 1 Agua",1), DOS_AGUAS("Techo a 2 Aguas",2),
-	VARIAS_AGUAS("Techo a Varias Aguas",3), PLANO("Techo Plano",4);
+public enum TipoRevestimientoExtPared {
+	LADRILLO_VISTA("ladrillo a la vista",1), CERAMICOS("cerámico",2),
+	MADERA("madera",3), PIEDRA("piedra",4), 
+	PETROS_CALIZOS("pétreos y calizos",3), LIGEROS("ligeros",4);
 	
 	private String descripcion;
 	private	int valor;
 	
-	private TipoTecho(String descripcion, int valor){
+	private TipoRevestimientoExtPared(String descripcion, int valor){
 		this.setDescripcion(descripcion);
 		this.setValor(valor);
 	}

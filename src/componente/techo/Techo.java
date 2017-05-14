@@ -1,4 +1,6 @@
-package componente;
+package componente.techo;
+
+import componente.Componente;
 
 public class Techo implements Componente {
 
@@ -18,7 +20,7 @@ public class Techo implements Componente {
 
 	@Override
 	public String getDescripcion() {
-		return this.getTipoTecho().getDescripcion();
+		return "Techo: "+this.getTipoTecho().getDescripcion();
 	}
 
 	@Override

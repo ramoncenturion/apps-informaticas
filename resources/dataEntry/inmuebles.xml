@@ -2,29 +2,50 @@
 <inmuebles>
 	<inmueble>
 		<nombre>Depto 1</nombre>
+		<propietario>Juan</propietario>
+		<costo>10000</costo>
 		<piso>
 			<tipoPiso>Ladrillo</tipoPiso>
 		</piso>
+		<pared>
+			<ladrillo>cocido de tierra</ladrillo>
+			<revestimientoInterno>ladrillo a la vista</revestimientoInterno>
+			<revestimientoExterno>piedra</revestimientoExterno>
+		</pared>
 		<techo>
-			<tipoTecho>Techo a 1 Agua</tipoTecho>
+			<tipoTecho>1 agua</tipoTecho>
 		</techo>
 	</inmueble>
 	<inmueble>
 		<nombre>Depto 2</nombre>
+		<propietario>Nicolas</propietario>
+		<costo>12000</costo>
 		<piso>
 			<tipoPiso>Madera</tipoPiso>
 		</piso>
+		<pared>
+			<ladrillo>cocido de tierra</ladrillo>
+			<revestimientoInterno>ladrillo a la vista</revestimientoInterno>
+			<revestimientoExterno>piedra</revestimientoExterno>
+		</pared>
 		<techo>
-			<tipoTecho>Techo a 2 Aguas</tipoTecho>
+			<tipoTecho>2 aguas</tipoTecho>
 		</techo>
 	</inmueble>
 	<inmueble>
 		<nombre>Depto 3</nombre>
+		<propietario>Miguel</propietario>
+		<costo>14000</costo>
 		<piso>
 			<tipoPiso>Ceramicos</tipoPiso>
 		</piso>
+		<pared>
+			<ladrillo>cocido de tierra</ladrillo>
+			<revestimientoInterno>ladrillo a la vista</revestimientoInterno>
+			<revestimientoExterno>piedra</revestimientoExterno>
+		</pared>
 		<techo>
-			<tipoTecho>Techo a Varias Aguas</tipoTecho>
+			<tipoTecho>varias aguas</tipoTecho>
 		</techo>
 	</inmueble>
 </inmuebles>

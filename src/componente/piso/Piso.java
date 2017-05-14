@@ -1,4 +1,6 @@
-package componente;
+package componente.piso;
+
+import componente.Componente;
 
 public class Piso implements Componente {
 
@@ -18,7 +20,7 @@ public class Piso implements Componente {
 
 	@Override
 	public String getDescripcion() {
-		return this.getTipoPiso().getDescripcion();
+		return "Piso: "+this.getTipoPiso().getDescripcion();
 	}
 
 	@Override

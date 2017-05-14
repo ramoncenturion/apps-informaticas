@@ -1,10 +1,10 @@
-package componente;
+package componente.piso;
 
 public enum TipoPiso {
 	
 	LADRILLO("Ladrillo",1),MADERA("Madera",2), CERAMICOS("Ceramicos",3), 
-	MARMOL("Marmol",4), CEMENTO_Y_HORMIGÓN("Cemento y Hormigon",5), MOSAICOS("Mosaicos",6), 
-	ENTABLONADA("Entablonada",7), FLOTANTE("Flotante",8);
+	MARMOL("Marmol",4), CEMENTO("cemento",5),CEMENTO_Y_HORMIGÓN("Cemento y Hormigon",6), 
+	MOSAICOS("Mosaicos",7), ENTABLONADA("Entablonada",8), FLOTANTE("Flotante",9);
 	
 	private String descripcion;
 	private	int valor;
